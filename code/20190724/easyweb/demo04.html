@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单</title>
+		<style type="text/css">
+			p{
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- form表单的标签
+		 属性：
+		 action：提交至服务端接口路径。
+		 method：提交的方法（restful）
+					post：创建
+					get：获取
+					put：修改
+					delete：删除
+		 -->
+		 <!-- action?param1=param_value&param2=param2_value -->
+		<form action="https://www.baidu.com" method="post">
+			<!-- 字段分组 -->
+			<fieldset id="sss">
+				<!-- 分组的标题 -->
+				<legend>用户基本信息</legend>
+				<p>
+					<!-- label:字段的文本描述 -->
+					<!-- input
+					 type: 输入元素的类型
+						text:单行文本
+						name：提交表单时，字段的名字
+						placeholder：当input未输入任何信息时，展示的提示性文本。
+						value：input的默认值
+					 -->
+					<label>用户名：</label><input type="text" name="username" placeholder="请输入用户名..." value="张三" />
+				</p>
+				<p>
+					<label>密码：</label><input type="password" name="password" placeholder="请输入密码..." value="十分士大夫士大夫的 " />
+				
+				</p>
+			</fieldset>
+			
+			<!-- select：单选下拉框
+			 name 单选框的名字
+			 multiple="multiple" 多选
+			 -->
+			<select name="select" >
+				<!-- option 选项 value要提交到服务器的值
+					属性：
+					selected：默认选中的元素
+					value：要提交到服务器的值
+				 -->
+				<option value="sdfsdf">山东</option>
+				<option value="sdfsdf">湖北</option>
+				<option value="sdfsdf" selected="selected">广西</option>
+				<option value="sdfsdf">武汉</option>
+			</select>
+			<!-- 多行文本 -->
+			<textarea name="note">士大夫士大夫但是</textarea>
+			<fieldset id="">
+				<legend>操作按钮</legend>
+				<input type="submit" value="登录"/>
+				<input type="reset" value="重置" />
+				<button>这是一个新的按钮</button>
+				
+			</fieldset>
+		</form>
+	</body>
+</html>

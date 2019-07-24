@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<!-- 
+	frameset:框架集合，用于一个页面包含多个框架，以前主要是用来做管理页面的排版布局。
+	属性：
+	rows：纵向显示的frame个数和占比，*号代表100%区域减去已知区域剩余的区域大小。
+	cols：横向显示的frame个数和占比,*号代表100%区域减去已知区域剩余的区域大小。
+	noresize:用于设置是否能够根据鼠标重新设置大小
+	src:要引入的页面的路径（可以是网络路径，也可以是本机相对路径以及绝对路径。）
+	
+	 -->
+	<frameset rows="30%,60%" noresize="noresize">
+		<frame src="./demo03-01.html" >
+		<frameset cols="20%,80%">
+			<frame src="demo03-02.html" >
+			<frame src="demo03-03.html" >
+		</frameset>
+	</frameset>
+</html>
