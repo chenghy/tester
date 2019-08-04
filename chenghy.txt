@@ -1,1 +1,8 @@
-这是一个没什么意思的文件
+logging模块讲解
+https://www.cnblogs.com/ranxf/p/7794240.html
+uuid
+https://www.cnblogs.com/ranxf/p/7804420.html
+configparser
+https://www.cnblogs.com/ranxf/p/7804608.html
+requests
+https://www.cnblogs.com/ranxf/p/7808537.html
